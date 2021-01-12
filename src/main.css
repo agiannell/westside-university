@@ -81,3 +81,18 @@ a {
   width: 60%;
   margin: 0 auto;
 }
+
+.back {
+  border: none;
+  background-color: #143A56;
+  color: white;
+  padding: 10px 50px;
+  font-family: 'Crimson Text', serif;
+  font-size: 1.5em;
+  margin-top: 25px;
+  transition: .2s;
+}
+
+.back:hover {
+  background-color: #2f89c9;
+}
