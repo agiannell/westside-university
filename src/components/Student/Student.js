@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import {Link} from 'react-router-dom'
 import axios from 'axios';
 
 export default class Student extends Component {
@@ -27,9 +26,7 @@ export default class Student extends Component {
         <h1>{studentInfo.first_name} {studentInfo.last_name}</h1>
         <h3>Grade: {studentInfo.grade}</h3>
         <h3>Email: {studentInfo.email}</h3>
-        <Link to={`/classlist/${studentInfo.class}`}>
-          <button className='back'>Back</button>
-        </Link>
+        <button onClick={this.props.history.goBack} className='back'>Back</button>
       </div>
     )
   }
